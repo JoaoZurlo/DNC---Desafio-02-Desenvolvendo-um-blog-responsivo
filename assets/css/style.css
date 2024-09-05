@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-VariableFont_wght.ttf');
+}
+
+#painelsuperior{
+    background-color: #02A28F;
+    margin: 0px;
+    height: 70px;
+}
+
+h1{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 700;
+    padding-left: 230px;
+    padding-top: 10px;
+    color: white;
+}
+
+h2{
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    gap: 25px; /* Espaçamento entre as colunas */
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 1244px;
+    height: 496px;
+    margin-top: 120px;
+    padding-left: 237px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 84%;
+    background-color: rgba(0, 0, 0, 0.429); /* Fundo semi-transparente */
+    color: white;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 237px;
+}
+
+.sidebar {
+    width: 461px; /* Ocupa 35% da largura do container */
+    height: 496px;
+    margin-top: 112px;
+}
+
+.sidebar h3 {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding-bottom: 18px;
+    background-color: #02A28F;
+    margin-bottom: 36px;
+    padding-top: 10px;
+    margin-top: 8px;
+    padding-left: 15px;
+    color: white;
+}
+
+.post-item {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.post-item img {
+    width: 132px; /* Largura da imagem */
+    height: 70px; /* Altura da imagem */
+    margin-right: 15px;
+    object-fit: cover; /* Garante que a imagem ocupe todo o espaço disponível */
+}
+
+.post-content {
+    flex: 1;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.post-item h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.post-item p {
+    margin: 0;
+    color: #555;
+}
+
+#textoimagem1{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+#textoimagem3{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+}
