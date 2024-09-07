@@ -2,6 +2,18 @@
     margin: 0px;
 }
 
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(180deg, rgba(5, 238, 156, 0.5) 50.91%, rgba(12, 112, 242, 0) 70.84%), #75a894;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Faz com que a cor do link herde a cor do elemento pai */
+}
+
 @font-face {
     font-family: 'Montserrat';
     src: url('../font/Montserrat-VariableFont_wght.ttf');
@@ -15,11 +27,16 @@
 
 h1{
     font-family: 'Montserrat';
-    font-size: 36px;
     font-weight: 700;
     padding-left: 230px;
     padding-top: 10px;
-    color: white;
+    background-image: url("/assets/imagens/images.jpg ");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 h2{
@@ -31,6 +48,7 @@ h2{
 .container {
     display: flex;
     gap: 25px; /* Espaçamento entre as colunas */
+    margin-bottom: 30px;
 }
 
 .image-container {
@@ -42,13 +60,23 @@ h2{
     height: 496px;
     margin-top: 120px;
     padding-left: 237px;
+    filter: grayscale(100%);
+    transition: all 0.5s;
 }
+
+.image-container img:hover {
+    width: 1244px;
+    height: 496px;
+    margin-top: 120px;
+    padding-left: 237px;
+    filter: grayscale(0%);
+}
+
 
 .text-overlay {
     position: absolute;
     bottom: 0;
-    width: 84%;
-    background-color: rgba(0, 0, 0, 0.429); /* Fundo semi-transparente */
+    width: 37%;
     color: white;
     text-align: left;
     padding: 20px;
@@ -67,7 +95,7 @@ h2{
     font-size: 20px;
     font-weight: 700;
     border-radius: 10px;
-    padding-bottom: 18px;
+    padding-bottom: 11px;
     background-color: #02A28F;
     margin-bottom: 36px;
     padding-top: 10px;
@@ -83,6 +111,7 @@ h2{
     border: 1px solid #ddd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     align-items: center;
+    border-radius: 10px;
 }
 
 .post-item img {
@@ -107,7 +136,10 @@ h2{
 
 .post-item p {
     margin: 0;
-    color: #555;
+    color: #fe0b0b;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 500;
 }
 
 #textoimagem1{
@@ -116,11 +148,89 @@ h2{
     font-weight: 400;
 }
 
-
-
-
 #textoimagem3{
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 700;
+}
+
+.sidebar2 {
+    width: 1234px; /* Ocupa 35% da largura do container */
+    height: 496px;
+    margin-top: 100px;
+    padding-left: 240px;
+}
+
+.sidebar2 h3 {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    background-color: #02A28F;
+    margin-bottom: 36px;
+    padding-top: 20px;
+    margin-top: 8px;
+    padding-left: 35px;
+    color: white;
+}
+
+.recent-posts {
+    display: flex;
+    flex-wrap: wrap; /* Quebra para a próxima linha após 2 posts */
+    width: 1239px; /* Define a largura exata do contêiner para caber dois posts por linha */
+    gap: 20px; /* Espaçamento entre os posts */
+    justify-content: center; /* Centraliza os posts dentro do contêiner */
+}
+
+
+.post {
+    width: calc(50% - 10px); /* Cada post ocupará metade da largura do contêiner, menos o espaçamento */
+    height: auto;  /* Altura de cada post */
+    background-color: lightgray; /* Exemplo de fundo */
+    border-radius: 20px;
+}
+
+.post img {
+    width: 100%; /* A imagem ocupa toda a largura do post */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 20px;
+}
+
+
+.post p {
+    background-color: lightgray; /* Exemplo de fundo para o texto */
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    color: #02A28F;
+    margin-left: 20px;
+}
+
+h4 {
+    margin-left: 25px;
+}
+
+.negrito {
+    font-weight: bold; /* ou 700 */
+}
+
+.fino {
+    font-weight: 100; /* ou 200, 300, dependendo da espessura disponível da fonte */
+}
+
+.textos1{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+.datas {
+    color: #fe0b0b;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 500;
 }
