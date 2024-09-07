@@ -2,7 +2,8 @@
     margin: 0px;
 }
 
-body{
+html body{
+    height: 100%;
     margin: 0px;
     padding: 0px;
     background: linear-gradient(180deg, rgba(5, 238, 156, 0.5) 50.91%, rgba(12, 112, 242, 0) 70.84%), #75a894;
@@ -43,13 +44,21 @@ h2{
     font-family: 'Montserrat';
     font-size: 32px;
     font-weight: 700;
+    padding-left: 20px;
 }
 
 .container {
     display: flex;
     gap: 25px; /* Espaçamento entre as colunas */
-    margin-bottom: 30px;
 }
+
+.container1 {
+    display: flex;
+    height: 1200px;
+    gap: 25px; /* Espaçamento entre as colunas */
+    padding-left: 5px;
+}
+
 
 .image-container {
     position: relative;
@@ -58,7 +67,7 @@ h2{
 .image-container img {
     width: 1244px;
     height: 496px;
-    margin-top: 120px;
+    margin-top: 80px;
     padding-left: 237px;
     filter: grayscale(100%);
     transition: all 0.5s;
@@ -67,7 +76,7 @@ h2{
 .image-container img:hover {
     width: 1244px;
     height: 496px;
-    margin-top: 120px;
+    margin-top: 80px;
     padding-left: 237px;
     filter: grayscale(0%);
 }
@@ -76,7 +85,7 @@ h2{
 .text-overlay {
     position: absolute;
     bottom: 0;
-    width: 37%;
+    width: 42%;
     color: white;
     text-align: left;
     padding: 20px;
@@ -87,7 +96,7 @@ h2{
 .sidebar {
     width: 461px; /* Ocupa 35% da largura do container */
     height: 496px;
-    margin-top: 112px;
+    margin-top: 70px;
 }
 
 .sidebar h3 {
@@ -95,7 +104,7 @@ h2{
     font-size: 20px;
     font-weight: 700;
     border-radius: 10px;
-    padding-bottom: 11px;
+    padding-bottom: 9px;
     background-color: #02A28F;
     margin-bottom: 36px;
     padding-top: 10px;
@@ -157,7 +166,7 @@ h2{
 .sidebar2 {
     width: 1234px; /* Ocupa 35% da largura do container */
     height: 496px;
-    margin-top: 100px;
+    margin-top: 25px;
     padding-left: 240px;
 }
 
@@ -181,6 +190,7 @@ h2{
     width: 1239px; /* Define a largura exata do contêiner para caber dois posts por linha */
     gap: 20px; /* Espaçamento entre os posts */
     justify-content: center; /* Centraliza os posts dentro do contêiner */
+    padding-bottom: 150px;
 }
 
 
@@ -189,6 +199,7 @@ h2{
     height: auto;  /* Altura de cada post */
     background-color: lightgray; /* Exemplo de fundo */
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .post img {
@@ -233,4 +244,64 @@ h4 {
     font-family: 'Montserrat';
     font-size: 12px;
     font-weight: 500;
+}
+
+footer {
+    height: 100%;
+    margin-top: 20px;
+    background-color: #02A28F; /* Cor de fundo opcional */
+    text-align: center; /* Centralizar o texto */
+    padding: 30px 0 30px 0;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.categorias {
+    font-family: 'Montserrat';
+    margin-top: 25px;
+    width: 360px; /* Ajuste conforme necessário */
+    height: 48px;
+}
+
+.categorias h3 {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    background-color: #02A28F;
+    margin-bottom: 36px;
+    padding-top: 20px;
+    margin-top: 8px;
+    padding-left: 35px;
+    color: white;
+}
+
+.categorias ul {
+    list-style-type: none; /* Remove as bolinhas padrão da lista */
+    padding: 0;
+}
+
+.categorias li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #616161;
+}
+
+.categorias li span:first-child {
+    font-weight: bold;
+    color: #000; /* Cor do texto da categoria */
+}
+
+.categorias .quantidade {
+    font-weight: normal;
+    color: #616161; /* Cor do número */
+    margin-left: auto; /* Garante que o número fique à direita */
 }
