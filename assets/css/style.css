@@ -1,307 +1,823 @@
-*{
-    margin: 0px;
-}
 
-html body{
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    background: linear-gradient(180deg, rgba(5, 238, 156, 0.5) 50.91%, rgba(12, 112, 242, 0) 70.84%), #75a894;
-    background-repeat: no-repeat;
-}
+@media only screen and (min-width: 2304px) {
 
-a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: inherit; /* Faz com que a cor do link herde a cor do elemento pai */
-}
+    * {
+        margin: 0px;
+    }
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../font/Montserrat-VariableFont_wght.ttf');
-}
+    html body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        background: linear-gradient(180deg, rgba(5, 238, 156, 0.5) 50.91%, rgba(12, 112, 242, 0) 70.84%), #75a894;
+        background-repeat: no-repeat;
+    }
 
-#painelsuperior{
-    background-color: #02A28F;
-    margin: 0px;
-    height: 70px;
-}
+    a {
+        text-decoration: none;
+        /* Remove o sublinhado */
+        color: inherit;
+        /* Faz com que a cor do link herde a cor do elemento pai */
+    }
 
-h1{
-    font-family: 'Montserrat';
-    font-weight: 700;
-    padding-left: 230px;
-    padding-top: 10px;
-    background-image: url("/assets/imagens/images.jpg ");
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 50px;
-    font-weight: bold;
-}
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('../font/Montserrat-VariableFont_wght.ttf');
+    }
 
-h2{
-    font-family: 'Montserrat';
-    font-size: 32px;
-    font-weight: 700;
-    padding-left: 20px;
-}
+    #painelsuperior {
+        background-color: #02A28F;
+        margin: 0px;
+        height: 70px;
+    }
 
-.container {
-    display: flex;
-    gap: 25px; /* Espaçamento entre as colunas */
-}
+    h1 {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        padding-left: 230px;
+        padding-top: 10px;
+        background-image: url("/assets/imagens/images.jpg ");
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 50px;
+        font-weight: bold;
+    }
 
-.container1 {
-    display: flex;
-    height: 1200px;
-    gap: 25px; /* Espaçamento entre as colunas */
-    padding-left: 5px;
-}
+    h2 {
+        font-family: 'Montserrat';
+        font-size: 32px;
+        font-weight: 700;
+        padding-left: 20px;
+    }
 
+    .container {
+        display: flex;
+        gap: 25px;
+        /* Espaçamento entre as colunas */
+    }
 
-.image-container {
-    position: relative;
-}
-
-.image-container img {
-    width: 1244px;
-    height: 496px;
-    margin-top: 80px;
-    padding-left: 237px;
-    filter: grayscale(100%);
-    transition: all 0.5s;
-}
-
-.image-container img:hover {
-    width: 1244px;
-    height: 496px;
-    margin-top: 80px;
-    padding-left: 237px;
-    filter: grayscale(0%);
-}
+    .container1 {
+        display: flex;
+        height: 1200px;
+        gap: 25px;
+        /* Espaçamento entre as colunas */
+        padding-left: 5px;
+    }
 
 
-.text-overlay {
-    position: absolute;
-    bottom: 0;
-    width: 42%;
-    color: white;
-    text-align: left;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-left: 237px;
-}
+    .image-container {
+        position: relative;
+    }
 
-.sidebar {
-    width: 461px; /* Ocupa 35% da largura do container */
-    height: 496px;
-    margin-top: 70px;
-}
+    .image-container img {
+        width: 1244px;
+        height: 496px;
+        margin-top: 80px;
+        padding-left: 237px;
+        filter: grayscale(100%);
+        transition: all 0.5s;
+    }
 
-.sidebar h3 {
-    font-family: 'Montserrat';
-    font-size: 20px;
-    font-weight: 700;
-    border-radius: 10px;
-    padding-bottom: 9px;
-    background-color: #02A28F;
-    margin-bottom: 36px;
-    padding-top: 10px;
-    margin-top: 8px;
-    padding-left: 15px;
-    color: white;
-}
-
-.post-item {
-    display: flex;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    border-radius: 10px;
-}
-
-.post-item img {
-    width: 132px; /* Largura da imagem */
-    height: 70px; /* Altura da imagem */
-    margin-right: 15px;
-    object-fit: cover; /* Garante que a imagem ocupe todo o espaço disponível */
-}
-
-.post-content {
-    flex: 1;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-}
-
-.post-item h4 {
-    margin: 0 0 10px 0;
-    font-size: 1.2em;
-}
-
-.post-item p {
-    margin: 0;
-    color: #fe0b0b;
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-weight: 500;
-}
-
-#textoimagem1{
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-weight: 400;
-}
-
-#textoimagem3{
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.sidebar2 {
-    width: 1234px; /* Ocupa 35% da largura do container */
-    height: 496px;
-    margin-top: 25px;
-    padding-left: 240px;
-}
-
-.sidebar2 h3 {
-    font-family: 'Montserrat';
-    font-size: 25px;
-    font-weight: 700;
-    border-radius: 10px;
-    padding-bottom: 20px;
-    background-color: #02A28F;
-    margin-bottom: 36px;
-    padding-top: 20px;
-    margin-top: 8px;
-    padding-left: 35px;
-    color: white;
-}
-
-.recent-posts {
-    display: flex;
-    flex-wrap: wrap; /* Quebra para a próxima linha após 2 posts */
-    width: 1239px; /* Define a largura exata do contêiner para caber dois posts por linha */
-    gap: 20px; /* Espaçamento entre os posts */
-    justify-content: center; /* Centraliza os posts dentro do contêiner */
-    padding-bottom: 150px;
-}
+    .image-container img:hover {
+        width: 1244px;
+        height: 496px;
+        margin-top: 80px;
+        padding-left: 237px;
+        filter: grayscale(0%);
+    }
 
 
-.post {
-    width: calc(50% - 10px); /* Cada post ocupará metade da largura do contêiner, menos o espaçamento */
-    height: auto;  /* Altura de cada post */
-    background-color: lightgray; /* Exemplo de fundo */
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
+    .text-overlay {
+        position: absolute;
+        bottom: 0;
+        width: 42%;
+        color: white;
+        text-align: left;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-left: 237px;
+    }
 
-.post img {
-    width: 100%; /* A imagem ocupa toda a largura do post */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 20px;
-}
+    .sidebar {
+        width: 461px;
+        /* Ocupa 35% da largura do container */
+        height: 496px;
+        margin-top: 70px;
+    }
+
+    .sidebar h3 {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 10px;
+        padding-bottom: 9px;
+        background-color: #02A28F;
+        margin-bottom: 36px;
+        padding-top: 10px;
+        margin-top: 8px;
+        padding-left: 15px;
+        color: white;
+    }
+
+    .post-item {
+        display: flex;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .post-item img {
+        width: 132px;
+        /* Largura da imagem */
+        height: 70px;
+        /* Altura da imagem */
+        margin-right: 15px;
+        object-fit: cover;
+        /* Garante que a imagem ocupe todo o espaço disponível */
+    }
+
+    .post-content {
+        flex: 1;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+    }
+
+    .post-item h4 {
+        margin: 0 0 10px 0;
+        font-size: 1.2em;
+    }
+
+    .post-item p {
+        margin: 0;
+        color: #fe0b0b;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    #textoimagem1 {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    
+
+    #textoimagem3 {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .sidebar2 {
+        width: 1234px;
+        /* Ocupa 35% da largura do container */
+        height: 496px;
+        margin-top: 25px;
+        padding-left: 240px;
+    }
+
+    .sidebar2 h3 {
+        font-family: 'Montserrat';
+        font-size: 25px;
+        font-weight: 700;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        background-color: #02A28F;
+        margin-bottom: 36px;
+        padding-top: 20px;
+        margin-top: 8px;
+        padding-left: 35px;
+        color: white;
+    }
+
+    .recent-posts {
+        display: flex;
+        flex-wrap: wrap;
+        /* Quebra para a próxima linha após 2 posts */
+        width: 1239px;
+        /* Define a largura exata do contêiner para caber dois posts por linha */
+        gap: 20px;
+        /* Espaçamento entre os posts */
+        justify-content: center;
+        /* Centraliza os posts dentro do contêiner */
+        padding-bottom: 150px;
+    }
 
 
-.post p {
-    background-color: lightgray; /* Exemplo de fundo para o texto */
-    padding: 5px;
-    border-radius: 5px;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-weight: 400;
-    color: #02A28F;
-    margin-left: 20px;
-}
+    .post {
+        width: calc(50% - 10px);
+        /* Cada post ocupará metade da largura do contêiner, menos o espaçamento */
+        height: auto;
+        /* Altura de cada post */
+        background-color: lightgray;
+        /* Exemplo de fundo */
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
 
-h4 {
-    margin-left: 25px;
-}
+    .post img {
+        width: 100%;
+        /* A imagem ocupa toda a largura do post */
+        height: auto;
+        /* Mantém a proporção da imagem */
+        border-radius: 20px;
+    }
 
-.negrito {
-    font-weight: bold; /* ou 700 */
-}
 
-.fino {
-    font-weight: 100; /* ou 200, 300, dependendo da espessura disponível da fonte */
-}
+    .post p {
+        background-color: lightgray;
+        /* Exemplo de fundo para o texto */
+        padding: 5px;
+        border-radius: 5px;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 400;
+        color: #02A28F;
+        margin-left: 20px;
+    }
 
-.textos1{
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-weight: 400;
-    color: black;
-}
+    h4 {
+        margin-left: 25px;
+    }
 
-.datas {
-    color: #fe0b0b;
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-weight: 500;
-}
+    .negrito {
+        font-weight: bold;
+        /* ou 700 */
+    }
 
-footer {
-    height: 100%;
-    margin-top: 20px;
-    background-color: #02A28F; /* Cor de fundo opcional */
-    text-align: center; /* Centralizar o texto */
-    padding: 30px 0 30px 0;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-}
+    .fino {
+        font-weight: 100;
+        /* ou 200, 300, dependendo da espessura disponível da fonte */
+    }
 
-.categorias {
-    font-family: 'Montserrat';
-    margin-top: 25px;
-    width: 360px; /* Ajuste conforme necessário */
-    height: 48px;
-}
+    .textos1 {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
+    }
 
-.categorias h3 {
-    font-family: 'Montserrat';
-    font-size: 25px;
-    font-weight: 700;
-    border-radius: 10px;
-    padding-bottom: 20px;
-    background-color: #02A28F;
-    margin-bottom: 36px;
-    padding-top: 20px;
-    margin-top: 8px;
-    padding-left: 35px;
-    color: white;
-}
+    .datas {
+        color: #fe0b0b;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight: 500;
+    }
 
-.categorias ul {
-    list-style-type: none; /* Remove as bolinhas padrão da lista */
-    padding: 0;
-}
+    footer {
+        height: 100%;
+        margin-top: 20px;
+        background-color: #02A28F;
+        /* Cor de fundo opcional */
+        text-align: center;
+        /* Centralizar o texto */
+        padding: 30px 0 30px 0;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+    }
 
-.categorias li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #616161;
-}
+    .categorias {
+        font-family: 'Montserrat';
+        margin-top: 25px;
+        width: 360px;
+        /* Ajuste conforme necessário */
+        height: 48px;
+    }
 
-.categorias li span:first-child {
-    font-weight: bold;
-    color: #000; /* Cor do texto da categoria */
-}
+    .categorias h3 {
+        font-family: 'Montserrat';
+        font-size: 25px;
+        font-weight: 700;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        background-color: #02A28F;
+        margin-bottom: 36px;
+        padding-top: 20px;
+        margin-top: 8px;
+        padding-left: 35px;
+        color: white;
+    }
 
-.categorias .quantidade {
-    font-weight: normal;
-    color: #616161; /* Cor do número */
-    margin-left: auto; /* Garante que o número fique à direita */
+    .categorias ul {
+        list-style-type: none;
+        /* Remove as bolinhas padrão da lista */
+        padding: 0;
+    }
+
+    .categorias li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #616161;
+    }
+
+    .categorias li span:first-child {
+        font-weight: bold;
+        color: #000;
+        /* Cor do texto da categoria */
+    }
+
+    .categorias .quantidade {
+        font-weight: normal;
+        color: #616161;
+        /* Cor do número */
+        margin-left: auto;
+        /* Garante que o número fique à direita */
+    }
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fazendo com que o projeto fique responsivo*/
+
+@media only screen and (max-width: 376px) {
+
+    /* Ajustes para 375x667 */
+    * {
+        margin: 0px;
+    }
+
+    html body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        background: linear-gradient(180deg, rgba(5, 238, 156, 0.5) 50.91%, rgba(12, 112, 242, 0) 70.84%), #75a894;
+        background-repeat: no-repeat;
+    }
+
+    a {
+        text-decoration: none;
+        /* Remove o sublinhado */
+        color: inherit;
+        /* Faz com que a cor do link herde a cor do elemento pai */
+    }
+
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('../font/Montserrat-VariableFont_wght.ttf');
+    }
+
+    #painelsuperior {
+        background-color: #02A28F;
+        margin: 0px;
+        width: fill (384px);
+        height: 60px;
+    }
+
+    h1 {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        text-align: center;
+        background-image: url("/assets/imagens/images.jpg ");
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 24px;
+        font-weight: bold;
+        padding-top: 13px;
+    }
+
+    h2 {
+        font-family: 'Montserrat';
+        font-size: 32px;
+        font-weight: 700;
+        padding-left: 5px;
+    }
+
+    
+
+    .image-container {
+        position: relative;
+        width: 366px; /* Largura da imagem */
+        height: 396px; /* Altura da imagem */
+        border-radius: 10px; /* Bordas arredondadas */
+        overflow: hidden; /* Garante que o conteúdo não transborde */
+    }
+
+    .image-container img {
+        position: relative;
+        width: 366px;
+        /* Largura da imagem */
+        height: 396px;
+        /* Altura da imagem */
+        padding: 25px 5px 0px 5px;
+        border-radius: 10px 0px 0px 0px;
+        overflow: hidden;
+        /* Garante que o conteúdo fique dentro da imagem */
+    }
+
+    .image-container img:hover {
+        width: 366px;
+        height: 396px;
+        padding: 25px 5px 0px 5px;
+        filter: grayscale(0%);
+    }
+
+
+    .text-overlay {
+        position: absolute;
+        bottom: 0; /* Alinha o texto na parte inferior da imagem */
+        left: 5px; /* Alinha o texto à esquerda */
+        width: 100%; /* Ocupa toda a largura da imagem */
+        color: white;
+        text-align: left;
+        padding: 10px; /* Padding interno para espaçamento do texto */
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor leitura */
+        border-radius: 0px 0px 10px 10px; /* Bordas arredondadas no canto inferior */
+        transition: opacity 0.5s;
+        font-size: 14px; /* Ajuste o tamanho da fonte se necessário */
+    }
+    
+
+    
+
+    .sidebar h3 {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 10px;
+        padding-bottom: 9px;
+        background-color: #02A28F;
+        margin-bottom: 36px;
+        padding-top: 10px;
+        margin-top: 8px;
+        padding-left: 15px;
+        color: white;
+        order: 2;
+    }
+
+    .post-item {
+        display: flex;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        border-radius: 10px;
+        order: 2;
+    }
+
+    .post-item img {
+        width: 110px;
+        /* Largura da imagem */
+        height: 40px;
+        /* Altura da imagem */
+        margin-right: 15px;
+        object-fit: cover;
+        order: 2;
+        /* Garante que a imagem ocupe todo o espaço disponível */
+    }
+
+    .post-content {
+        flex: 1;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        order: 2;
+    }
+
+    .post-item h4 {
+        margin: 0 0 10px 0;
+        font-size: 1.2em;
+        order: 2;
+    }
+
+    .post-item p {
+        margin: 0;
+        color: #fe0b0b;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight: 500;
+        order: 2;
+    }
+
+    #textoimagem1 {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+        order: 2;
+    }
+
+    #textoimagem3 {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 700;
+        order: 2;
+    }
+
+    
+
+    .sidebar2 h3 {
+        font-family: 'Montserrat';
+        font-size: 25px;
+        font-weight: 700;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        background-color: #02A28F;
+        margin-bottom: 36px;
+        padding-top: 20px;
+        margin-top: 8px;
+        padding-left: 35px;
+        color: white;
+    }
+
+    .recent-posts {
+        display: flex;
+        width: 1239px;
+        /* Define a largura exata do contêiner para caber dois posts por linha */
+        justify-content: center;
+        /* Centraliza os posts dentro do contêiner */
+        
+    }
+
+
+    .post {
+        width: calc(50% - 10px);
+        /* Cada post ocupará metade da largura do contêiner, menos o espaçamento */
+        height: auto;
+        /* Altura de cada post */
+        background-color: lightgray;
+        /* Exemplo de fundo */
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .post img {
+        width: 100%;
+        /* A imagem ocupa toda a largura do post */
+        height: auto;
+        /* Mantém a proporção da imagem */
+        border-radius: 20px;
+    }
+
+
+    .post p {
+        background-color: lightgray;
+        /* Exemplo de fundo para o texto */
+        padding: 5px;
+        border-radius: 5px;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 400;
+        color: #02A28F;
+        margin-left: 20px;
+    }
+
+    h4 {
+        margin-left: 5px;
+    }
+
+    .negrito {
+        font-weight: bold;
+        /* ou 700 */
+    }
+
+    .fino {
+        font-weight: 100;
+        /* ou 200, 300, dependendo da espessura disponível da fonte */
+    }
+
+    .textos1 {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
+    }
+
+    .datas {
+        color: #fe0b0b;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    footer {
+        height: 100%;
+        background-color: #02A28F;
+        /* Cor de fundo opcional */
+        text-align: center;
+        height: 20px;
+        width: 100%;
+        /* Centralizar o texto */
+        padding: 30px 0 30px 0;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        position: absolute;
+        margin-top: 2000px;
+        
+    }
+
+    
+
+    .categorias h3 {
+        font-family: 'Montserrat';
+        font-size: 25px;
+        font-weight: 700;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        background-color: #02A28F;
+        margin-bottom: 36px;
+        padding-top: 20px;
+        margin-top: 8px;
+        padding-left: 35px;
+        color: white;
+        position: absolute;
+        margin-top: 500px;
+        height: 20px;
+        width: 100%;
+        
+        
+    }
+
+    .categorias ul {
+        list-style-type: none;
+        /* Remove as bolinhas padrão da lista */
+        padding: 0;
+        position: absolute;
+        margin-top: 580px;
+        height: 20px;
+        width: 100%;
+       
+    }
+
+    .categorias li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #616161;
+    }
+
+    .categorias li span:first-child {
+        font-weight: bold;
+        color: #000;
+        /* Cor do texto da categoria */
+    }
+
+    .categorias .quantidade {
+        font-weight: normal;
+        color: #616161;
+        /* Cor do número */
+        margin-left: auto;
+        /* Garante que o número fique à direita */
+    }
+
+    
+    
+    /* Ajuste o sidebar para garantir que fique abaixo do container1 */
+    .sidebar {
+        position: absolute;
+        top: 1000px;
+        right: 0; /* Alinha o sidebar ao lado direito */
+        z-index: 1; /* Garante que o sidebar fique sobre os outros elementos */
+        width: 368px;
+        height: 496px;
+        /* Ajuste a altura conforme necessário */
+    }
+    
+    
+
 }
