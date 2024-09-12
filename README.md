@@ -22,10 +22,32 @@ O projeto é dividido em três seções principais:
    ```bash
    git clone https://github.com/usuario/the-dev-news.git
 
+2. Navegue até a pasta do projeto:
+   ```bash
+   cd the-dev-news
 
-![image](https://github.com/user-attachments/assets/302d9f84-b97f-4851-9011-505b28cd78cb)
+3. Abra o arquivo index.html em um navegador:
+   ```bash
+   open index.html
 
-![image](https://github.com/user-attachments/assets/fc9cdc1e-97f8-4e23-b858-15bf5ed22e23)
+##Estrutura de Arquivos
+A estrutura básica de diretórios do projeto é a seguinte:
+```bash
+the-dev-news/
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css      # Estilos personalizados para a página
+│   ├── imagens/
+│   │   └── várias imagens usadas no site
+│   └── icons/
+│       └── coollogo_com-294611499.ico  # Ícone do site
+│
+├── index.html             # Arquivo principal da página
+├── README.md              # Este arquivo README
+└── font/
+    └── Montserrat-VariableFont_wght.ttf  # Fonte Montserrat.
+```
 
 ## Funcionalidades
 
