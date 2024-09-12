@@ -30,7 +30,7 @@ O projeto é dividido em três seções principais:
    ```bash
    open index.html
 
-##Estrutura de Arquivos
+## Estrutura de Arquivos
 A estrutura básica de diretórios do projeto é a seguinte:
 ```bash
 the-dev-news/
