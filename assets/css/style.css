@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 2304px) {
+@media only screen and (min-width: 2000px) {
 
     * {
         margin: 0px;
@@ -274,7 +274,7 @@
 
     footer {
         height: 100%;
-        margin-top: 20px;
+        margin-top: 32px;
         background-color: #02A28F;
         /* Cor de fundo opcional */
         text-align: center;
@@ -284,14 +284,19 @@
         font-size: 14px;
         font-weight: 600;
         color: white;
+        
+    }
+
+    .painelinferior{
+        margin: 0;
+        padding: 0;
     }
 
     .categorias {
         font-family: 'Montserrat';
         margin-top: 25px;
-        width: 360px;
+        width: 468px;
         /* Ajuste conforme necessário */
-        height: 48px;
     }
 
     .categorias h3 {
@@ -306,6 +311,7 @@
         margin-top: 8px;
         padding-left: 35px;
         color: white;
+
     }
 
     .categorias ul {
@@ -343,129 +349,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Fazendo com que o projeto fique responsivo*/
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 385px) {
 
     /* Ajustes para 375x667 */
     * {
@@ -473,6 +359,7 @@
     }
 
     html body {
+        width: 365px;
         height: 100%;
         margin: 0px;
         padding: 0px;
@@ -495,7 +382,7 @@
     #painelsuperior {
         background-color: #02A28F;
         margin: 0px;
-        width: fill (384px);
+        width: 375px;
         height: 60px;
     }
 
@@ -524,37 +411,31 @@
 
     .image-container {
         position: relative;
-        width: 366px; /* Largura da imagem */
-        height: 396px; /* Altura da imagem */
         border-radius: 10px; /* Bordas arredondadas */
         overflow: hidden; /* Garante que o conteúdo não transborde */
     }
 
     .image-container img {
         position: relative;
-        width: 366px;
-        /* Largura da imagem */
-        height: 396px;
+        height: 376px;
         /* Altura da imagem */
-        padding: 25px 5px 0px 5px;
         border-radius: 10px 0px 0px 0px;
         overflow: hidden;
         /* Garante que o conteúdo fique dentro da imagem */
+        margin: 10px 5px 0 10px;
     }
 
     .image-container img:hover {
-        width: 366px;
-        height: 396px;
-        padding: 25px 5px 0px 5px;
+        width: 365px;
+        height: 376px;
         filter: grayscale(0%);
     }
 
 
     .text-overlay {
         position: absolute;
-        bottom: 0; /* Alinha o texto na parte inferior da imagem */
-        left: 5px; /* Alinha o texto à esquerda */
-        width: 100%; /* Ocupa toda a largura da imagem */
+        bottom: 0; /* Alinha o texto na parte inferior da imagem */ /* Alinha o texto à esquerda */
+        width: 365px;/* Ocupa toda a largura da imagem */
         color: white;
         text-align: left;
         padding: 10px; /* Padding interno para espaçamento do texto */
@@ -563,6 +444,7 @@
         border-radius: 0px 0px 10px 10px; /* Bordas arredondadas no canto inferior */
         transition: opacity 0.5s;
         font-size: 14px; /* Ajuste o tamanho da fonte se necessário */
+        margin: 10px 5px 0 10px;
     }
     
 
@@ -578,9 +460,9 @@
         margin-bottom: 36px;
         padding-top: 10px;
         margin-top: 8px;
-        padding-left: 15px;
         color: white;
         order: 2;
+        margin: 10px 5px 0 10px;
     }
 
     .post-item {
@@ -592,6 +474,7 @@
         align-items: center;
         border-radius: 10px;
         order: 2;
+        margin: 10px 5px 0 10px;
     }
 
     .post-item img {
@@ -603,6 +486,7 @@
         object-fit: cover;
         order: 2;
         /* Garante que a imagem ocupe todo o espaço disponível */
+        margin: 10px 5px 0 10px;
     }
 
     .post-content {
@@ -654,23 +538,25 @@
         background-color: #02A28F;
         margin-bottom: 36px;
         padding-top: 20px;
-        margin-top: 8px;
-        padding-left: 35px;
         color: white;
+        width: 345px;
+        margin: 25px 5px 0 10px;
+        padding-left: 10px;
     }
 
     .recent-posts {
-        display: flex;
-        width: 1239px;
+        
+        width: 355px;
         /* Define a largura exata do contêiner para caber dois posts por linha */
         justify-content: center;
         /* Centraliza os posts dentro do contêiner */
+        margin: 10px 5px 0 10px;
         
     }
 
 
     .post {
-        width: calc(50% - 10px);
+        
         /* Cada post ocupará metade da largura do contêiner, menos o espaçamento */
         height: auto;
         /* Altura de cada post */
@@ -681,11 +567,13 @@
     }
 
     .post img {
-        width: 100%;
+        width: 353.8px;
+        height: 191px;
         /* A imagem ocupa toda a largura do post */
         height: auto;
         /* Mantém a proporção da imagem */
         border-radius: 20px;
+        
     }
 
 
@@ -698,7 +586,6 @@
         font-size: 14px;
         font-weight: 400;
         color: #02A28F;
-        margin-left: 20px;
     }
 
     h4 {
@@ -734,8 +621,8 @@
         background-color: #02A28F;
         /* Cor de fundo opcional */
         text-align: center;
-        height: 20px;
-        width: 100%;
+        height: 10px;
+        width: 375px;
         /* Centralizar o texto */
         padding: 30px 0 30px 0;
         font-family: 'Montserrat';
@@ -743,8 +630,7 @@
         font-weight: 600;
         color: white;
         position: absolute;
-        margin-top: 2000px;
-        
+        margin-top: 640px;
     }
 
     
@@ -754,30 +640,23 @@
         font-size: 25px;
         font-weight: 700;
         border-radius: 10px;
-        padding-bottom: 20px;
         background-color: #02A28F;
-        margin-bottom: 36px;
-        padding-top: 20px;
-        margin-top: 8px;
-        padding-left: 35px;
         color: white;
         position: absolute;
-        margin-top: 500px;
-        height: 20px;
-        width: 100%;
-        
+        width: 354px;
+        margin: 430px 5px 0 10px;
+        text-align: center;
         
     }
 
     .categorias ul {
         list-style-type: none;
-        /* Remove as bolinhas padrão da lista */
         padding: 0;
         position: absolute;
-        margin-top: 580px;
+        margin-top: 480px;
         height: 20px;
-        width: 100%;
-       
+        width: 349px;
+        margin-left: 10px;
     }
 
     .categorias li {
@@ -810,12 +689,13 @@
     /* Ajuste o sidebar para garantir que fique abaixo do container1 */
     .sidebar {
         position: absolute;
-        top: 1000px;
-        right: 0; /* Alinha o sidebar ao lado direito */
         z-index: 1; /* Garante que o sidebar fique sobre os outros elementos */
-        width: 368px;
+        width: 365px;
         height: 496px;
         /* Ajuste a altura conforme necessário */
+        margin: 1580px 7px 0px 0px;
+        padding-bottom: 0;
+        text-align: center;
     }
     
     
